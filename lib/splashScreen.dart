@@ -13,19 +13,19 @@ class Splashscreen extends StatefulWidget {
 
 class _SplashscreenState extends State<Splashscreen> {
   @override
-  // void initState(){
-  //   super.initState();
-  //     Future.delayed(const Duration(milliseconds: 3));
-  //     RouteGenerator.navigateToPage(context, Routes.onboardingPageRoute);   
-
-  // }
+  void initState(){
+    super.initState();
+      Future.delayed(const Duration(milliseconds: 15),(){
+      RouteGenerator.navigateToPage(context, Routes.onboardingPageRoute);   
+      });
+  }
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colors.primaryColor,
+      backgroundColor: colors.whiteColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-            Image.asset("images/assets/splashScreenImg.png",),
+            Image.asset(splashScreenLogoPath),
              Center(
             child: 
             Text(appName,style:TextStyle(

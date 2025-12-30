@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/core/utils/routeConst.dart';
 import 'package:shopping_app/onboardingPage.dart';
+import 'package:shopping_app/signup.dart';
+import 'package:shopping_app/widgets/loginPage.dart';
 
 class RouteGenerator {
   static navigateToPage(BuildContext context, String route,
@@ -21,6 +23,10 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.onboardingPageRoute:
         return MaterialPageRoute(builder: (_) => const Onboardingpage ());
+        case Routes.signupPageRoute:
+        return MaterialPageRoute(builder: (_) => const SignupPage ());
+         case Routes.loginPageRoute:
+        return MaterialPageRoute(builder: (_) => const Loginpage ());
      
           
       default:
