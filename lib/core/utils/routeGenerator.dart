@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/core/utils/routeConst.dart';
+import 'package:shopping_app/forgotPassword.dart';
 import 'package:shopping_app/onboardingPage.dart';
 import 'package:shopping_app/signup.dart';
 import 'package:shopping_app/widgets/loginPage.dart';
@@ -27,6 +28,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const SignupPage ());
          case Routes.loginPageRoute:
         return MaterialPageRoute(builder: (_) => const Loginpage ());
+        case Routes.forgotpasswordRoute:
+        return MaterialPageRoute(builder: (_) => const ForgotPassword ());
      
           
       default:

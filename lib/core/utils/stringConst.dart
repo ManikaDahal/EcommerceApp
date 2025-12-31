@@ -57,3 +57,11 @@ RegExp passwordRegex = RegExp(passwordPatternStr);
 
 const String agreeTermsAndConditionStr='I agree to the terms and conditions';
 const String notAgreedToTermsAndConditionsMessage="Please agree to terms and condition to signup";
+
+
+
+//Login Page
+const String welcomeBackStr="Welcome Back";
+const String rememberMeStr="Remember me";
+const String forgetPasswordStr="Forgot Password";
+const String dontHaveAccountStr="Don't have an account";

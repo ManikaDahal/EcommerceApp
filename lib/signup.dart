@@ -28,26 +28,7 @@ class _SignupPageState extends State<SignupPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading:  CircleAvatar(
-                backgroundColor: whiteColor,
-                 child: IconButton(
-                   onPressed: () {
-                     RouteGenerator.navigateToPage(
-                       context,
-                       Routes.onboardingPageRoute,
-                     );
-                   },
-                   icon: Icon(Icons.close),
-                 ),
-              ),
-        backgroundColor: primaryColor,
-        title: Text(
-          signUpStr,
-          style: TextStyle(color: whiteColor, fontSize: 25),
-        ),
-        centerTitle: true,
-      ),
+      
       body: Stack(
         children: [
           ui(),
@@ -66,6 +47,18 @@ class _SignupPageState extends State<SignupPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+               CircleAvatar(
+                backgroundColor: whiteColor,
+                 child: IconButton(
+                   onPressed: () {
+                     RouteGenerator.navigateToPage(
+                       context,
+                       Routes.onboardingPageRoute,
+                     );
+                   },
+                   icon: Icon(Icons.close),
+                 ),
+              ),
               
 
               SizedBox(height: 20),
